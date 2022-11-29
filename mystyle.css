@@ -1,0 +1,172 @@
+*{padding: 0 ;margin:0;box-sizing:border-box,font-family:sans-serif;}
+header{
+  font-family:sans-serif;
+  width:100%;
+  min-height:100vh;
+  /*background:url('hp.jpg');
+  background-size:stretch;*/
+  position:relative;
+}
+.info{
+  color:white;
+  font-size:20px;
+  padding:20px 70px;
+  cursor:pointer;
+}
+
+.info span{
+  margin: 0 10px;
+}
+
+nav{
+  width:100%;
+  height:70px;
+  padding: 0 70px;
+  /*flex? - dono ek row mein chahiye is liye?*/
+  display :flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* logo not visible?*/
+.logo{
+  color:white;
+  font-size:2em;
+  font-family:normal;
+  letter-spacing: 2px;
+  /*background: transparent;*/
+}
+
+ .menu a{
+   /*underline - by default , it'll get removed*/
+   text-decoration:none;
+   color:white;
+   padding:10px 20px;
+   font-size:20px;
+   position:relative;
+   right:0px;
+   transition: 0.4s;
+ }
+
+ .menu a:hover{
+   background:#e84393;
+   border-radius:8px;
+ }
+
+ .box{
+   background:white;
+   width: 450px;
+   height: 500px;
+   position: absolute;
+   top:25%;
+   right:5%;
+   padding :30px;
+ }
+
+ form{
+   width:100%;
+ }
+
+ form input[type="text"]{
+   width:100%;
+   padding:20px 10px;
+   margin:10px 0;
+   outline:none;
+   border:none;
+   background:rgba(0,0,0,0.1);/* 0.1 4rth arg?*/
+ }
+ form input[type="email"]{
+   width:100%;
+   padding:20px 10px;
+   margin:10px 0;
+   outline:none;
+   border:none;
+   background:rgba(0,0,0,0.1);/* 0.1 4rth arg?*/
+ }
+ form input[type="tel"]{
+   width:100%;
+   padding:20px 10px;
+   margin:10px 0;
+   outline:none;
+   border:none;
+   background:rgba(0,0,0,0.1);/* 0.1 4rth arg?*/
+ }
+/*same kyu nai hai? button and placeholder*/
+
+form input[type="submit"]{
+  width:100%;
+  padding:20px 10px;
+  margin:10px 0;
+  outline:none;
+  border:none;
+  background:#ff7854;
+  color:white;
+  cursor:pointer;
+  transition:0.4s
+}
+
+form input[type="submit"]:hover{
+  background:transparent;
+  border:1px solid grey;
+  color:black;
+}
+
+.box span{
+  color:#e84393;
+  cursor:pointer;
+}
+/*
+.htext{
+  position:fixed;
+  top:30%;
+  left:0.2%;
+  max-width:600px;
+  color:black;
+}
+
+.htext h1{
+  font-size: 2em;
+}
+*/
+
+.htext{
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      max-width: 600px;
+      color: white;
+}
+
+.htext h1{
+  font-size: 4em;
+}
+
+.htext h2{
+  font-size: 2em;
+  align:center;
+}
+
+.htext p{
+  /*margin : top-bottom left-right*/
+  margin:15px 0px;
+  line-height: 2em;
+}
+
+.htext a{
+  text-decoration: none;
+  color: white;
+  padding : 10px 20px;
+  border:1px solid white;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  transition: 0.4s
+}
+
+.htext a:hover{
+  background: #ff7854;
+}
+
+body{
+    background: linear-gradient(262deg, #ff7854,#fd267d);
+/*    background-size: contain;*/
+}
